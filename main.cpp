@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "SkillCategory.h"
 
 // Represents the player's character attributes.
 struct PlayerCharacter {
@@ -20,30 +21,10 @@ struct PlayerStats {
     float expMax;
 };
 
-class Perk {
-    public:
-    std::string name;
-    int cost;
-
-    Perk(const std::string &n, int c)
-        : name(n), cost(c) {}
-    };
-
-class SkillCategory {
-    private:
-       std::string name;
-      std::vector<Perk> perks;
-    public:
-       SkillCategory(const std::string &n, const std::vector<Perk> &p)
-           : name(n), perks(p) {}
-
-    std::string getName() const { return name; }
-
-    void addPerk(const Perk &perk) {
-           perks.push_back(perk);
-       };
-};
-
+void displaySkills() {
+    GameSkills::OneHanded.printPerks();
+    GameSkills::TwoHanded.printPerks();
+}
 
 // Contains the various skill categories.
 struct Skills {
@@ -90,37 +71,9 @@ void activateSkill(PlayerCharacter &player, const std::string &skill, int requir
 }
 
 int main() {
-    // Initialize player character.
-    PlayerCharacter player {
-        100.0f,   // healthPoints
-        100.0f,   // maxHealthPoints
-        50.0f,    // mana
-        50.0f,    // maxMana
-        "Hero",   // name
-        false,    // equippedStatus
-        {}        // activeSkills
-    };
+    for (int i = 0; i < 10; i++) {
 
-    // Initialize player progression stats.
-    PlayerStats stats {1, 0.0f, 100.0f};
-
-    // Initialize the skill sets.
-    Skills skills;
-
-    // Print available skills in each category.
-    std::cout << "Strength Skills:\n";
-    for (const auto &skill : skills.strengthSkills)
-        std::cout << " - " << skill << "\n";
-
-    std::cout << "\nAgility Skills:\n";
-    for (const auto &skill : skills.agilitySkills)
-        std::cout << " - " << skill << "\n";
-
-    std::cout << "\nMagic Skills:\n";
-    for (const auto &skill : skills.magicSkills)
-        std::cout << " - " << skill << "\n";
-
-
+    }
 
     return 0;
 }
