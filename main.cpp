@@ -20,6 +20,31 @@ struct PlayerStats {
     float expMax;
 };
 
+class Perk {
+    public:
+    std::string name;
+    int cost;
+
+    Perk(const std::string &n, int c)
+        : name(n), cost(c) {}
+    };
+
+class SkillCategory {
+    private:
+       std::string name;
+      std::vector<Perk> perks;
+    public:
+       SkillCategory(const std::string &n, const std::vector<Perk> &p)
+           : name(n), perks(p) {}
+
+    std::string getName() const { return name; }
+
+    void addPerk(const Perk &perk) {
+           perks.push_back(perk);
+       };
+};
+
+
 // Contains the various skill categories.
 struct Skills {
     std::vector<std::string> strengthSkills;
