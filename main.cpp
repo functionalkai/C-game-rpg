@@ -69,11 +69,3 @@ void activateSkill(PlayerCharacter &player, const std::string &skill, int requir
         std::cout << "Not enough perk points to activate " << skill << "\n";
     }
 }
-
-int main() {
-    for (int i = 0; i < 10; i++) {
-
-    }
-
-    return 0;
-}
