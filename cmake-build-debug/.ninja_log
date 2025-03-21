@@ -1,0 +1,7 @@
+# ninja log v6
+3	113	7641735331903125	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj.ddi	1644064d300fdd2f
+114	155	7641735333391469	CMakeFiles/alpha_game_build_vastaria.dir/CXX.dd	5af5df457ce2a559
+114	155	7641735333391469	C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/alpha_game_build_vastaria.dir/CXXModules.json	5af5df457ce2a559
+114	155	7641735333391469	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj.modmap	5af5df457ce2a559
+162	766	7641735333494119	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj	29519c7ea2dce205
+766	1001	7641735339529914	alpha_game_build_vastaria.exe	6a85f695af98452b

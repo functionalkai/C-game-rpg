@@ -1,0 +1,3 @@
+C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/alpha_game_build_vastaria.dir
+C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/rebuild_cache.dir

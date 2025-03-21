@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\alpha_game_build_vastaria.dir\\main.cpp.obj",
+            "outputs": [
+                "C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\alpha_game_build_vastaria.dir\\main.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}
