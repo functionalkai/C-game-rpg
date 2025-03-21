@@ -1,64 +1,101 @@
-#include <cmath>
+#include <iostream>
 #include <string>
-#include <cstdlib>
 #include <vector>
 
-
-struct
-{
+// Represents the player's character attributes.
+struct PlayerCharacter {
     float healthPoints;
     float maxHealthPoints;
     float mana;
     float maxMana;
-
     std::string name;
     bool equippedStatus;
-    bool playerSkills;
+    std::vector<std::string> activeSkills; // List of currently active skills
+};
 
-} playerCharacter;
+// Holds player progression data.
+struct PlayerStats {
+    int perkPoints;
+    float exp;
+    float expMax;
+};
 
-void playerCharacterSkills()
-{
-    // Strength
-    std::vector<std::string> strengthSkills = {
-    "One Handed", "Two Handed", "Dual Wield", "Smithing", "Heavy Armor", "Unarmed"
-    };
-    // Agility
-    std::vector<std::string> agilitySkills = {
-    "Thieving", "Lockpicking", "Stealth", "Archery", "Speech", "Charm"
-    };
-    // Magic
-    std::vector<std::string> magicSkills = {
-    "Evocation", "Illusion", "Necromancy", "Conjuration", "Enchantment", "Divination"
-    };
-}
+// Contains the various skill categories.
+struct Skills {
+    std::vector<std::string> strengthSkills;
+    std::vector<std::string> agilitySkills;
+    std::vector<std::string> magicSkills;
 
-void playerPerks() {
-    int perkPoint = 1;
-    float exp = 0.0f;
-    float expMax = 100.0f;
-    if (exp = expMax; expMAX * 1.5f) {
-        perkPoint++;
-        for (player.exp = i; player.exp > 1000; ++perkPoint) {
-            playerCharacter.playerSkills();
-        }
+    // Constructor initializes the vectors with default skills.
+    Skills()
+      : strengthSkills{"One Handed", "Two Handed", "Dual Wield", "Smithing", "Heavy Armor", "Unarmed"},
+        agilitySkills{"Thieving", "Lockpicking", "Stealth", "Archery", "Speech", "Charm"},
+        magicSkills{"Evocation", "Illusion", "Necromancy", "Conjuration", "Enchantment", "Divination", "Chronomancy"}
+    {}
+};
+
+// Checks if the player has gained enough experience to receive a perk point.
+void updatePlayerPerks(PlayerStats &stats) {
+    // If experience exceeds 150% of expMax, grant a perk point.
+    if (stats.exp >= stats.expMax * 1.5f) {
+        stats.perkPoints++;
+        // Optionally, subtract the exp used to gain the perk and increase the threshold for the next perk.
+        stats.exp -= stats.expMax * 1.5f;
+        stats.expMax *= 1.2f;
+        std::cout << "New perk point gained! Total perk points: " << stats.perkPoints << "\n";
     }
 }
 
-void playerActiveSkills()
-{
-    std::vector<std::string> playerSkills = {" "};
-    if (player.perkpoint = 1;) {
-        bool isActive = true;
-    }
-
+// Ensures that the player's health and mana do not exceed their maximum values.
+void updatePlayerStats(PlayerCharacter &player) {
+    if (player.healthPoints > player.maxHealthPoints)
+        player.healthPoints = player.maxHealthPoints;
+    if (player.mana > player.maxMana)
+        player.mana = player.maxMana;
 }
 
-void playerStats() {
-    playerCharacter.healthPoints = playerCharacter.maxHealthPoints;
-    playerCharacter.mana = playerCharacter.maxMana;
-
-    if (playerCharacter.healthPoints > playerCharacter.maxHealthPoints) {
-
+// Example function to activate a skill (this could be expanded as needed).
+void activateSkill(PlayerCharacter &player, const std::string &skill, int requiredPerkPoints, const PlayerStats &stats) {
+    if (stats.perkPoints >= requiredPerkPoints) {
+        player.activeSkills.push_back(skill);
+        std::cout << "Activated skill: " << skill << "\n";
+    } else {
+        std::cout << "Not enough perk points to activate " << skill << "\n";
     }
+}
+
+int main() {
+    // Initialize player character.
+    PlayerCharacter player {
+        100.0f,   // healthPoints
+        100.0f,   // maxHealthPoints
+        50.0f,    // mana
+        50.0f,    // maxMana
+        "Hero",   // name
+        false,    // equippedStatus
+        {}        // activeSkills
+    };
+
+    // Initialize player progression stats.
+    PlayerStats stats {1, 0.0f, 100.0f};
+
+    // Initialize the skill sets.
+    Skills skills;
+
+    // Print available skills in each category.
+    std::cout << "Strength Skills:\n";
+    for (const auto &skill : skills.strengthSkills)
+        std::cout << " - " << skill << "\n";
+
+    std::cout << "\nAgility Skills:\n";
+    for (const auto &skill : skills.agilitySkills)
+        std::cout << " - " << skill << "\n";
+
+    std::cout << "\nMagic Skills:\n";
+    for (const auto &skill : skills.magicSkills)
+        std::cout << " - " << skill << "\n";
+
+
+
+    return 0;
 }
