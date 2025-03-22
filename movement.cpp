@@ -10,6 +10,9 @@ void movement() {
     float movementX = 0;
     float movementY = 0;
 
+    float mouseMovementY = 0.0f;
+    float mouseMovementX = 0.0f;
+
     switch (movement) {
         case 0:
             if (KeyPress W)
@@ -27,6 +30,7 @@ void movement() {
             if (keyPress A)
                 movementX--;
         break;
+        )
 
 
     }
