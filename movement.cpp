@@ -30,9 +30,15 @@ void movement() {
             if (keyPress A)
                 movementX--;
         break;
-        )
+    };
 
+int getMouseY(void);
+int getMouseX(void);
+Vector2 GetMouseDelta(void);
+Vector2 GetMousePosition(void);
+        if (mouseMovementY > mouseMovementX) {
+            mouseMovementX = mouseMovementY;
+            mouseMovementY = getMouseY();
+        }
 
     }
-
-}
