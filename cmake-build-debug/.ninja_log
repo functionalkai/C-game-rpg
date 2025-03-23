@@ -5,3 +5,12 @@
 114	155	7641735333391469	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj.modmap	5af5df457ce2a559
 162	766	7641735333494119	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj	29519c7ea2dce205
 766	1001	7641735339529914	alpha_game_build_vastaria.exe	6a85f695af98452b
+5	277	7644257940039632	CMakeFiles/alpha_game_build_vastaria.dir/main.cpp.obj.ddi	e2819a89c8777f2
+38	281	7644257940380351	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj	9eb442fd456ccec3
+64	289	7644257940632604	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj	b21e542db6cd0502
+44	387	7644257940431288	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj	511c4c321f4f4949
+28	410	7644257940277981	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj	9ceb77afc6a8f100
+19	480	7644257940184146	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj	b15ce168c98b2cab
+73	512	7644257940725239	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj	10e1d7bd0f01215
+49	593	7644257940483122	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj	15eac9f3dbb89a87
+15	912	7644257940142934	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj	f0c7170803ca9c10

@@ -1,4 +1,32 @@
 "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\doom3\CLionProjects\alpha_game_build_vastaria -B C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
+Cloning into 'raylib-src'...
+remote: Enumerating objects: 7700, done.        
+remote: Counting objects: 100% (7700/7700), done.        
+remote: Compressing objects: 100% (4882/4882), done.        
+remote: Total 7700 (delta 4881), reused 4857 (delta 2699), pack-reused 0 (from 0)        
+Receiving objects: 100% (7700/7700), 249.59 MiB | 11.32 MiB/s, done.
+Resolving deltas: 100% (4881/4881), done.
+HEAD is now at c1ab645 Update HISTORY.md
+-- Performing Test COMPILER_HAS_THOSE_TOGGLES
+-- Performing Test COMPILER_HAS_THOSE_TOGGLES - Failed
+-- Testing if -Werror=pointer-arith can be used -- Failed
+-- Testing if -Werror=implicit-function-declaration can be used -- Failed
+-- Testing if -fno-strict-aliasing can be used -- Failed
+-- Using raylib's GLFW
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Including Win32 support
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Debug
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_33
+-- Configuring done (34.9s)
+-- Generating done (0.2s)
 -- Build files have been written to: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug

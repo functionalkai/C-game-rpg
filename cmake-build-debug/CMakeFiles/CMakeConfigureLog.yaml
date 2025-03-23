@@ -210,3 +210,136 @@ events:
       Microsoft (R) Incremental Linker Version 14.40.33808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "cmake-build-debug/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "cmake-build-debug/_deps/raylib-src/CMakeLists.txt:34 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g5v14w"
+      binary: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g5v14w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g5v14w'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a9c71
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_HAS_THOSE_TOGGLES  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi   -Werror=pointer-arith /showIncludes /FoCMakeFiles\\cmTC_a9c71.dir\\src.c.obj /FdCMakeFiles\\cmTC_a9c71.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-g5v14w\\src.c
+        FAILED: CMakeFiles/cmTC_a9c71.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_HAS_THOSE_TOGGLES  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi   -Werror=pointer-arith /showIncludes /FoCMakeFiles\\cmTC_a9c71.dir\\src.c.obj /FdCMakeFiles\\cmTC_a9c71.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-g5v14w\\src.c
+        cl : Command line error D8021 : invalid numeric argument '/Werror=pointer-arith'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xw9cj2"
+      binary: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xw9cj2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xw9cj2'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5e309
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_5e309.dir\\src.c.obj /FdCMakeFiles\\cmTC_5e309.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xw9cj2\\src.c
+        FAILED: CMakeFiles/cmTC_5e309.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_5e309.dir\\src.c.obj /FdCMakeFiles\\cmTC_5e309.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xw9cj2\\src.c
+        C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xw9cj2\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5otjcc"
+      binary: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5otjcc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5otjcc'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -v cmTC_1ccc0
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_1ccc0.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_1ccc0.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-5otjcc\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1ccc0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1ccc0.dir\\CheckFunctionExists.c.obj  /out:cmTC_1ccc0.exe /implib:cmTC_1ccc0.lib /pdb:cmTC_1ccc0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_1ccc0.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1ccc0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1ccc0.dir\\CheckFunctionExists.c.obj  /out:cmTC_1ccc0.exe /implib:cmTC_1ccc0.lib /pdb:cmTC_1ccc0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1ccc0.dir\\CheckFunctionExists.c.obj /out:cmTC_1ccc0.exe /implib:cmTC_1ccc0.lib /pdb:cmTC_1ccc0.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1ccc0.dir/intermediate.manifest CMakeFiles\\cmTC_1ccc0.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tv9miv"
+      binary: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tv9miv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/cmake;C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tv9miv'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7b421
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_7b421.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_7b421.dir\\ /FS -c C:\\Users\\doom3\\CLionProjects\\alpha_game_build_vastaria\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-tv9miv\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b421.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b421.dir\\CheckFunctionExists.c.obj  /out:cmTC_7b421.exe /implib:cmTC_7b421.lib /pdb:cmTC_7b421.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_7b421.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2024.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b421.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b421.dir\\CheckFunctionExists.c.obj  /out:cmTC_7b421.exe /implib:cmTC_7b421.lib /pdb:cmTC_7b421.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b421.dir\\CheckFunctionExists.c.obj /out:cmTC_7b421.exe /implib:cmTC_7b421.lib /pdb:cmTC_7b421.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7b421.dir/intermediate.manifest CMakeFiles\\cmTC_7b421.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

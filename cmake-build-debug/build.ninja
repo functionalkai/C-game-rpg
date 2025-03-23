@@ -47,18 +47,22 @@ cmake_ninja_workdir = C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cm
 #############################################
 # Order-only phony target for alpha_game_build_vastaria
 
-build cmake_object_order_depends_target_alpha_game_build_vastaria: phony || .
+build cmake_object_order_depends_target_alpha_game_build_vastaria: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
 
 build CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.ddi: CXX_SCAN__alpha_game_build_vastaria_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\main.cpp || cmake_object_order_depends_target_alpha_game_build_vastaria
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include
   OBJ_FILE = CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.ddi.i
 
 build CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj: CXX_COMPILER__alpha_game_build_vastaria_scanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\main.cpp | CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.modmap || cmake_object_order_depends_target_alpha_game_build_vastaria CMakeFiles\alpha_game_build_vastaria.dir\CXX.dd
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include
   OBJECT_DIR = CMakeFiles\alpha_game_build_vastaria.dir
   OBJECT_FILE_DIR = CMakeFiles\alpha_game_build_vastaria.dir
   TARGET_COMPILE_PDB = CMakeFiles\alpha_game_build_vastaria.dir\
@@ -66,15 +70,19 @@ build CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj: CXX_COMPILER__alpha
   dyndep = CMakeFiles/alpha_game_build_vastaria.dir/CXX.dd
 
 build CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.ddi: CXX_SCAN__alpha_game_build_vastaria_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\movement.cpp || cmake_object_order_depends_target_alpha_game_build_vastaria
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include
   OBJ_FILE = CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.ddi.i
 
 build CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj: CXX_COMPILER__alpha_game_build_vastaria_scanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\movement.cpp | CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.modmap || cmake_object_order_depends_target_alpha_game_build_vastaria CMakeFiles\alpha_game_build_vastaria.dir\CXX.dd
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include
   OBJECT_DIR = CMakeFiles\alpha_game_build_vastaria.dir
   OBJECT_FILE_DIR = CMakeFiles\alpha_game_build_vastaria.dir
   TARGET_COMPILE_PDB = CMakeFiles\alpha_game_build_vastaria.dir\
@@ -91,10 +99,10 @@ build CMakeFiles\alpha_game_build_vastaria.dir\CXX.dd | C$:\Users\doom3\CLionPro
 #############################################
 # Link the executable alpha_game_build_vastaria.exe
 
-build alpha_game_build_vastaria.exe: CXX_EXECUTABLE_LINKER__alpha_game_build_vastaria_Debug CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj
+build alpha_game_build_vastaria.exe: CXX_EXECUTABLE_LINKER__alpha_game_build_vastaria_Debug CMakeFiles\alpha_game_build_vastaria.dir\main.cpp.obj CMakeFiles\alpha_game_build_vastaria.dir\movement.cpp.obj | _deps\raylib-build\raylib\raylib.lib || _deps\raylib-build\raylib\external\glfw\src\glfw _deps\raylib-build\raylib\raylib.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = _deps\raylib-build\raylib\raylib.lib  opengl32.lib  glu32.lib  winmm.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\alpha_game_build_vastaria.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -102,6 +110,30 @@ build alpha_game_build_vastaria.exe: CXX_EXECUTABLE_LINKER__alpha_game_build_vas
   TARGET_FILE = alpha_game_build_vastaria.exe
   TARGET_IMPLIB = alpha_game_build_vastaria.lib
   TARGET_PDB = alpha_game_build_vastaria.pdb
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles\package.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles\package_source.util
 
 
 #############################################
@@ -126,10 +158,700 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for uninstall
+
+build _deps\raylib-build\uninstall: phony _deps\raylib-build\CMakeFiles\uninstall
+
+
+#############################################
+# Utility command for package
+
+build _deps\raylib-build\CMakeFiles\package.util: CUSTOM_COMMAND _deps\raylib-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\package: phony _deps\raylib-build\CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps\raylib-build\CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\package_source: phony _deps\raylib-build\CMakeFiles\package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\raylib-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\raylib-build\edit_cache: phony _deps\raylib-build\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\raylib-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\doom3\CLionProjects\alpha_game_build_vastaria -BC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\rebuild_cache: phony _deps\raylib-build\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\raylib-build\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\raylib-build\CMakeFiles\install.util: CUSTOM_COMMAND _deps\raylib-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\install: phony _deps\raylib-build\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\raylib-build\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\raylib-build\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\install\local: phony _deps\raylib-build\CMakeFiles\install\local.util
+
+
+#############################################
+# Custom command for _deps\raylib-build\CMakeFiles\uninstall
+
+build _deps\raylib-build\CMakeFiles\uninstall | ${cmake_ninja_workdir}_deps\raylib-build\CMakeFiles\uninstall: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-build/cmake_uninstall.cmake"
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Order-only phony target for raylib
+
+build cmake_object_order_depends_target_raylib: phony || cmake_object_order_depends_target_glfw
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raudio.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\raudio.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rcore.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\rcore.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rmodels.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\rmodels.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rshapes.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\rshapes.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtext.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\rtext.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtextures.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\rtextures.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+build _deps\raylib-build\raylib\CMakeFiles\raylib.dir\utils.c.obj: C_COMPILER__raylib_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\utils.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src -external:IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -external:W0
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Link the static library _deps\raylib-build\raylib\raylib.lib
+
+build _deps\raylib-build\raylib\raylib.lib: C_STATIC_LIBRARY_LINKER__raylib_Debug _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raudio.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rcore.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rmodels.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rshapes.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtext.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtextures.c.obj _deps\raylib-build\raylib\CMakeFiles\raylib.dir\utils.c.obj || _deps\raylib-build\raylib\external\glfw\src\glfw
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
+  TARGET_FILE = _deps\raylib-build\raylib\raylib.lib
+  TARGET_PDB = _deps\raylib-build\raylib\raylib.pdb
+
+
+#############################################
+# Utility command for package
+
+build _deps\raylib-build\raylib\CMakeFiles\package.util: CUSTOM_COMMAND _deps\raylib-build\raylib\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\package: phony _deps\raylib-build\raylib\CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps\raylib-build\raylib\CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\package_source: phony _deps\raylib-build\raylib\CMakeFiles\package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\raylib-build\raylib\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\raylib-build\raylib\edit_cache: phony _deps\raylib-build\raylib\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\raylib-build\raylib\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\doom3\CLionProjects\alpha_game_build_vastaria -BC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\rebuild_cache: phony _deps\raylib-build\raylib\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\raylib-build\raylib\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\raylib-build\raylib\CMakeFiles\install.util: CUSTOM_COMMAND _deps\raylib-build\raylib\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\install: phony _deps\raylib-build\raylib\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\raylib-build\raylib\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\raylib-build\raylib\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\install\local: phony _deps\raylib-build\raylib\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/cmake/GlfwImport.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for package
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\package.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\package: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\package_source: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\edit_cache: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\doom3\CLionProjects\alpha_game_build_vastaria -BC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\rebuild_cache: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\raylib-build\raylib\external\glfw\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\install.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\install: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\raylib-build\raylib\external\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\install\local: phony _deps\raylib-build\raylib\external\glfw\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for OBJECT_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || .
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\platform.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /W3
+  INCLUDES = -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\include -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src -IC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
+  TARGET_PDB = ""
+
+
+
+#############################################
+# Object library glfw
+
+build _deps\raylib-build\raylib\external\glfw\src\glfw: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+
+
+#############################################
+# Utility command for update_mappings
+
+build _deps\raylib-build\raylib\external\glfw\src\update_mappings: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings
+
+
+#############################################
+# Utility command for package
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\package.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\src\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\package: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\package_source: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\edit_cache: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\doom3\CLionProjects\alpha_game_build_vastaria -BC:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\rebuild_cache: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\raylib-build\raylib\external\glfw\src\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\src\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\install: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\raylib-build\raylib\external\glfw\src\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-build\raylib\external\glfw\src && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\raylib-build\raylib\external\glfw\src\install\local: phony _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\install\local.util
+
+
+#############################################
+# Custom command for _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings
+
+build _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}_deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\doom3\CLionProjects\alpha_game_build_vastaria\cmake-build-debug\_deps\raylib-src\src\external\glfw\src && "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
+  DESC = Updating gamepad mappings from upstream repository
+
 # =============================================================================
 # Target aliases.
 
 build alpha_game_build_vastaria: phony alpha_game_build_vastaria.exe
+
+build glfw: phony _deps\raylib-build\raylib\external\glfw\src\glfw
+
+build raylib: phony _deps\raylib-build\raylib\raylib.lib
+
+build raylib.lib: phony _deps\raylib-build\raylib\raylib.lib
+
+build uninstall: phony _deps\raylib-build\uninstall
+
+build update_mappings: phony _deps\raylib-build\raylib\external\glfw\src\update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -139,7 +861,35 @@ build alpha_game_build_vastaria: phony alpha_game_build_vastaria.exe
 #############################################
 # Folder: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug
 
-build all: phony alpha_game_build_vastaria.exe
+build all: phony alpha_game_build_vastaria.exe _deps\raylib-build\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-build
+
+build _deps\raylib-build\all: phony _deps\raylib-build\raylib\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-build/raylib
+
+build _deps\raylib-build\raylib\all: phony _deps\raylib-build\raylib\raylib.lib _deps\raylib-build\raylib\external\glfw\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-build/raylib/external/glfw
+
+build _deps\raylib-build\raylib\external\glfw\all: phony _deps\raylib-build\raylib\external\glfw\src\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/doom3/CLionProjects/alpha_game_build_vastaria/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
+
+build _deps\raylib-build\raylib\external\glfw\src\all: phony _deps\raylib-build\raylib\external\glfw\src\glfw
 
 # =============================================================================
 # Built-in targets
@@ -148,14 +898,14 @@ build all: phony alpha_game_build_vastaria.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CPack.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CPackComponent.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckLibraryExists.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\gitupdate.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\stepscript.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FetchContent.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindGit.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindThreads.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Templates\CPackConfig.cmake.in C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake CMakeFiles\fc-tmp\raylib\download.cmake CMakeFiles\fc-tmp\raylib\patch.cmake CMakeFiles\fc-tmp\raylib\raylib-gitclone.cmake CMakeFiles\fc-tmp\raylib\raylib-gitupdate.cmake CMakeFiles\fc-tmp\raylib\update.cmake _deps\raylib-src\CMakeLists.txt _deps\raylib-src\CMakeOptions.txt _deps\raylib-src\cmake\AddIfFlagCompiles.cmake _deps\raylib-src\cmake\CompileDefinitions.cmake _deps\raylib-src\cmake\CompilerFlags.cmake _deps\raylib-src\cmake\EnumOption.cmake _deps\raylib-src\cmake\GlfwImport.cmake _deps\raylib-src\cmake\InstallConfigurations.cmake _deps\raylib-src\cmake\JoinPaths.cmake _deps\raylib-src\cmake\LibraryConfigurations.cmake _deps\raylib-src\cmake\LibraryPathToLinkerFlags.cmake _deps\raylib-src\cmake\PackConfigurations.cmake _deps\raylib-src\cmake\ParseConfigHeader.cmake _deps\raylib-src\cmake\PopulateConfigVariablesLocally.cmake _deps\raylib-src\cmake\Uninstall.cmake _deps\raylib-src\cmake\raylib-config-version.cmake _deps\raylib-src\raylib.pc.in _deps\raylib-src\src\CMakeLists.txt _deps\raylib-src\src\external\glfw\CMakeLists.txt _deps\raylib-src\src\external\glfw\CMake\glfw3.pc.in _deps\raylib-src\src\external\glfw\CMake\glfw3Config.cmake.in _deps\raylib-src\src\external\glfw\src\CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake: phony
+build C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CPack.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CPackComponent.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckLibraryExists.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\gitupdate.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\ExternalProject\stepscript.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FetchContent.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindGit.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindThreads.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.3\bin\cmake\win\x64\share\cmake-3.30\Templates\CPackConfig.cmake.in C$:\Users\doom3\CLionProjects\alpha_game_build_vastaria\CMakeLists.txt CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake CMakeFiles\fc-tmp\raylib\download.cmake CMakeFiles\fc-tmp\raylib\patch.cmake CMakeFiles\fc-tmp\raylib\raylib-gitclone.cmake CMakeFiles\fc-tmp\raylib\raylib-gitupdate.cmake CMakeFiles\fc-tmp\raylib\update.cmake _deps\raylib-src\CMakeLists.txt _deps\raylib-src\CMakeOptions.txt _deps\raylib-src\cmake\AddIfFlagCompiles.cmake _deps\raylib-src\cmake\CompileDefinitions.cmake _deps\raylib-src\cmake\CompilerFlags.cmake _deps\raylib-src\cmake\EnumOption.cmake _deps\raylib-src\cmake\GlfwImport.cmake _deps\raylib-src\cmake\InstallConfigurations.cmake _deps\raylib-src\cmake\JoinPaths.cmake _deps\raylib-src\cmake\LibraryConfigurations.cmake _deps\raylib-src\cmake\LibraryPathToLinkerFlags.cmake _deps\raylib-src\cmake\PackConfigurations.cmake _deps\raylib-src\cmake\ParseConfigHeader.cmake _deps\raylib-src\cmake\PopulateConfigVariablesLocally.cmake _deps\raylib-src\cmake\Uninstall.cmake _deps\raylib-src\cmake\raylib-config-version.cmake _deps\raylib-src\raylib.pc.in _deps\raylib-src\src\CMakeLists.txt _deps\raylib-src\src\external\glfw\CMakeLists.txt _deps\raylib-src\src\external\glfw\CMake\glfw3.pc.in _deps\raylib-src\src\external\glfw\CMake\glfw3Config.cmake.in _deps\raylib-src\src\external\glfw\src\CMakeLists.txt: phony
 
 
 #############################################
